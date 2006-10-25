@@ -9,7 +9,7 @@ Summary:	SGI::FAM - Perl interface to SGI/Irix File Access Monitor
 Summary(pl):	SGI::FAM - perlowy interfejs do monitora dostêpu do plików FAM
 Name:		perl-SGI-FAM
 Version:	1.002
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -21,15 +21,16 @@ BuildRequires:	perl-Getopt-Mixed
 BuildRequires:	perl-Test-Helper
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	sed >= 4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Provides a somewhat higher-level and friendlier interface to the
 SGI/Irix File Access Monitor API. This allows one to monitor both
 local and remote (NFS-mounted) files and directories for common
-filesystem events. To do so, you must register "monitors" on
-specified pathnames and wait for events to arrive pertaining to them.
-To get a full description of the API, you should see fam(3x).
+filesystem events. To do so, you must register "monitors" on specified
+pathnames and wait for events to arrive pertaining to them. To get a
+full description of the API, you should see fam(3x).
 
 %description -l pl
 SGI::FAM udostêpnia nieco bardziej wysokopoziomowy i przyjazny
@@ -43,6 +44,7 @@ manualu fam(3x).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%{__sed} -i -e '1s,#!.*/bin/perl,#!%{__perl},' magicrcs monitor
 
 %build
 %{__perl} Makefile.PL \
