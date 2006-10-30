@@ -9,7 +9,7 @@ Summary:	SGI::FAM - Perl interface to SGI/Irix File Access Monitor
 Summary(pl):	SGI::FAM - perlowy interfejs do monitora dostêpu do plików FAM
 Name:		perl-SGI-FAM
 Version:	1.002
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -44,7 +44,7 @@ manualu fam(3x).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%{__sed} -i -e '1s,#!.*/bin/perl,#!%{__perl},' magicrcs monitor
+%{__sed} -i -e '1s,#!.*/bin/perl5,#!%{__perl},' magicrcs monitor
 
 %build
 %{__perl} Makefile.PL \
