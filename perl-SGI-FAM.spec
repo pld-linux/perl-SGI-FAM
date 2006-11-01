@@ -9,7 +9,7 @@ Summary:	SGI::FAM - Perl interface to SGI/Irix File Access Monitor
 Summary(pl):	SGI::FAM - perlowy interfejs do monitora dostêpu do plików FAM
 Name:		perl-SGI-FAM
 Version:	1.002
-Release:	3
+Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -66,11 +66,15 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGES README TODO
-%attr(755,root,root) %{_bindir}/*
+# %{_bindir}/magicrcs seems to be broken
+%attr(755,root,root) %{_bindir}/mo*
 %dir %{perl_vendorarch}/SGI
 %{perl_vendorarch}/SGI/*.pm
 %dir %{perl_vendorarch}/auto/SGI
 %dir %{perl_vendorarch}/auto/SGI/FAM
 %{perl_vendorarch}/auto/SGI/FAM/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/SGI/FAM/*.so
-%{_mandir}/man[13]/*
+%{perl_vendorarch}/auto/SGI/FAM/*.ix
+%{perl_vendorarch}/auto/SGI/FAM/*.al
+%{_mandir}/man1/mo*
+%{_mandir}/man3/*
