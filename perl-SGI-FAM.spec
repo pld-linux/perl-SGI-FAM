@@ -6,7 +6,7 @@
 %define	pdir	SGI
 %define	pnam	FAM
 Summary:	SGI::FAM - Perl interface to SGI/Irix File Access Monitor
-Summary(pl):	SGI::FAM - perlowy interfejs do monitora dostêpu do plików FAM
+Summary(pl.UTF-8):   SGI::FAM - perlowy interfejs do monitora dostÄ™pu do plikÃ³w FAM
 Name:		perl-SGI-FAM
 Version:	1.002
 Release:	4
@@ -32,14 +32,14 @@ filesystem events. To do so, you must register "monitors" on specified
 pathnames and wait for events to arrive pertaining to them. To get a
 full description of the API, you should see fam(3x).
 
-%description -l pl
-SGI::FAM udostêpnia nieco bardziej wysokopoziomowy i przyjazny
-interfejs do API monitora dostêpu do plików FAM (File Access Monitor)
-pochodz±cego z SGI/Iriksa. Pozwala on monitorowaæ zarówno lokalne jak
-i zdalne (podmontowane przez NFS) pliki i katalogi pod k±tem zwyk³ych
-zdarzeñ wystêpuj±cych w systemach plików. Aby to zrobiæ, nale¿y
-zarejestrowaæ "monitory" na podanych ¶cie¿kach plików i oczekiwaæ na
-nadej¶cie zwi±zanych z nimi zdarzeñ. Pe³ny opis API znajduje siê w
+%description -l pl.UTF-8
+SGI::FAM udostÄ™pnia nieco bardziej wysokopoziomowy i przyjazny
+interfejs do API monitora dostÄ™pu do plikÃ³w FAM (File Access Monitor)
+pochodzÄ…cego z SGI/Iriksa. Pozwala on monitorowaÄ‡ zarÃ³wno lokalne jak
+i zdalne (podmontowane przez NFS) pliki i katalogi pod kÄ…tem zwykÅ‚ych
+zdarzeÅ„ wystÄ™pujÄ…cych w systemach plikÃ³w. Aby to zrobiÄ‡, naleÅ¼y
+zarejestrowaÄ‡ "monitory" na podanych Å›cieÅ¼kach plikÃ³w i oczekiwaÄ‡ na
+nadejÅ›cie zwiÄ…zanych z nimi zdarzeÅ„. PeÅ‚ny opis API znajduje siÄ™ w
 manualu fam(3x).
 
 %prep
