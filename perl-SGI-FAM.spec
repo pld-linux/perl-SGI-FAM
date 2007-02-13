@@ -6,7 +6,7 @@
 %define	pdir	SGI
 %define	pnam	FAM
 Summary:	SGI::FAM - Perl interface to SGI/Irix File Access Monitor
-Summary(pl.UTF-8):   SGI::FAM - perlowy interfejs do monitora dostępu do plików FAM
+Summary(pl.UTF-8):	SGI::FAM - perlowy interfejs do monitora dostępu do plików FAM
 Name:		perl-SGI-FAM
 Version:	1.002
 Release:	4
