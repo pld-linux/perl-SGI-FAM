@@ -13,8 +13,9 @@ Release:	4
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/SGI/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	e92451d3d8fbb9ea6e1995f80d5b086a
+URL:		http://search.cpan.org/dist/SGI-FAM/
 BuildRequires:	fam-devel
 BuildRequires:	perl-File-PathConvert
 BuildRequires:	perl-Getopt-Mixed
