@@ -74,7 +74,6 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/SGI/*.pm
 %dir %{perl_vendorarch}/auto/SGI
 %dir %{perl_vendorarch}/auto/SGI/FAM
-%{perl_vendorarch}/auto/SGI/FAM/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/SGI/FAM/*.so
 %{perl_vendorarch}/auto/SGI/FAM/*.ix
 %{perl_vendorarch}/auto/SGI/FAM/*.al
