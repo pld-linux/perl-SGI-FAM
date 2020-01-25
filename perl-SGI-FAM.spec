@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	SGI
 %define	pnam	FAM
 Summary:	SGI::FAM - Perl interface to SGI/Irix File Access Monitor
